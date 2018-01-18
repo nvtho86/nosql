@@ -27,8 +27,11 @@ else
               if (err) {
                   console.log(err);
               } else if (result.length) {
-        console.log(result);
-        //var result=result.length;
+                // console.log(result);
+                //var result=result.length;
+                result.forEach(function(element) {
+                    console.log(element.address.building);
+                }, this);
 
               } else {
                   console.log('No document(s) found with defined "find" criteria!');
