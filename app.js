@@ -31,6 +31,7 @@ else
                 //var result=result.length;
                 result.forEach(function(element) {
                     console.log(element.address.building);
+                    console.log(element.address);
                 }, this);
 
               } else {
